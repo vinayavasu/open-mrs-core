@@ -1091,43 +1091,7 @@
 	</distributionManagement>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<javaCompilerVersion>1.8</javaCompilerVersion>
-		<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
-		<TIMESTAMP>${maven.build.timestamp}</TIMESTAMP>
-
-		<openmrs.version.long>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion} ${parsedVersion.qualifier} Build ${revisionNumber}</openmrs.version.long>
-		<openmrs.version.short>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}-${revisionNumber}</openmrs.version.short>
-		<openmrs.version.shortnumericonly>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}</openmrs.version.shortnumericonly>
-		<openmrs.version>${project.version}</openmrs.version>
-
-		<!-- Tracking important versions and version dependencies -->
-		<!-- Note that the versions of these dependencies can be limited by support for other libraries.
-			 For instance, our version of Lucene is tied to the version of Hibernate Search. Similarly, our
-			 version of Hibernate Search must be compatible with the version of Hibernate and Hibernate must
-			 be compatible with our version of Spring. -->
-		<springVersion>5.2.14.RELEASE</springVersion>
-		<hibernateVersion>5.5.7.Final</hibernateVersion>
-		<hibernateSearchVersion>5.11.9.Final</hibernateSearchVersion>
-		<luceneVersion>5.5.5</luceneVersion>
-		<aspectjVersion>1.9.7</aspectjVersion>
-		<jacksonVersion>2.13.0</jacksonVersion>
-		<junitVersion>5.8.1</junitVersion>
-		<mockitoVersion>3.12.4</mockitoVersion>
-		<hamcrestVersion>2.2</hamcrestVersion>
-
-		<slf4jVersion>1.7.32</slf4jVersion>
-		<log4jVersion>2.14.1</log4jVersion>
-
-		<customArgLineForTesting />
-
-		<sonar.organization>vv2016</sonar.organization>
+  		<sonar.organization>vv2016</sonar.organization>
   		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.issuesReport.html.enable>true</sonar.issuesReport.html.enable>
-		<sonar.issuesReport.lightModeOnly>true</sonar.issuesReport.lightModeOnly>
-		<sonar.issuesReport.console.enable>true</sonar.issuesReport.console.enable>
-		<sonar.analysis.mode>publish</sonar.analysis.mode>
-
-		<argLine>-Duser.language=en -Duser.region=US -Xmx1g ${customArgLineForTesting} -Djava.locale.providers=COMPAT</argLine>
 	</properties>
 </project>
