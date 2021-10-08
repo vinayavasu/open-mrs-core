@@ -1131,4 +1131,3 @@
 		<argLine>-Duser.language=en -Duser.region=US -Xmx1g ${customArgLineForTesting} -Djava.locale.providers=COMPAT</argLine>
 	</properties>
 </project>
-</properties>
